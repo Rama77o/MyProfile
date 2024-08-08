@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/logos/ll.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Files</a></li>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Portfolio
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#proj1">Html, Css</a></li>
+                            <li><a class="dropdown-item" href="#proj2">React Js</a></li>
+                            <li><a class="dropdown-item" href="#proj3">React & Firebase</a></li>
+                            <li><a class="dropdown-item" href="#proj4">React & Laravel</a></li>
+
+                        </ul>
+                    </div>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Welcome To My Profile</div>
+            <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Contact With Me</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Files</h2>
+                <h3 class="section-subheading text-muted"> Please find my attached CV and cover letter via the links
+                    below</h3>
+            </div>
+            <div class="row text-center servicesProfile">
+                <div class="col-md-4">
+                    <!-- <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span> -->
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEo0lEQVR4nO2c70sbdxzHb4OxTeu0ykoZg17iHd6Ftau2ZesfMbYO5+PBxqiurE9mKXRtjPsJM6VqJt2ejD1oHfSJbqXCnkyrrj513ZOVbRSMtUj7tYk2d0nU9/ictTBnvEua5HK5zxfecNxdvnzz4v3+fj4XyElSBY6AEmqXFe16QNFWHmkiqGpvu70uT4yAql2QVW2OILa0tNSRCJ6sardkRY+6vb6KHgFynqrNvRwKNW69RucCih7fp2rH3FmdB4ZsxTbUnvN6s94RUPVxyZPjdKKpPnz36jNnk6b0iYl8FVB1W8mKlqHI5lpCMBislxU97WSuQtZI362+5+5P0mnsLjq/+p6F0XcvfpdOTtUBM1LeCjgCqGcURXlhZ4CaI4CFrHF5ehc++DaWbuy9c7noAJ89+8BYmmwoaGFwClDVEztV2409Uk+UCiDpwWQ9dkcWFosOkCxe6KLgEKAFsVmPv6RpTdsVEVnV553O8yRrrQsvJr0LUNVMWdXvUcGgOJMeOW+erjFA1SlIPSGrWmZDzmLrTQdmhSPlC+BJ5XRdDFD1CcD9rYfL5r4DbUeqD+Dxrs6yAew60Vl9AP/5axZtR14vObzWw6/h9t+/Vx9AZAUW4n/ixEcfliTONCc5Ly94XgOIShQDFAwQ7EDhfhQ5woIBwm03+aGImIZA/1QSB2MGno+Yllq/MTAwnUTaZIDYCV78/hJC/QYODaXRdXUNn0/AUufPa2gbSuOVgRTmxRI7EDmcR/DeuryKr6exrd68tIr9g6nyOtErEb4wmbSclwvepsiJg9NJBogtAF+NpazY2gGkONOeyA7M/hdgTcS09js7gJ9dh3WvU4BHL5qO5PkI10RMC44dwE8ngNo8APpmDzwYM6x42gE8ThWZIyz+B5D6PCoQdgBbh9KI/cZFBFsBUmtCfR61KrngvXFpFQcGU8hwGyO2jTE1yQSRnEhR3Wyk6ZicR/DucCMtbJ1IfR7tc1RYSIeGDCu2ZXWe14oIssICdGU2iY7hhwhGN56FCSAd0zm6VnaIXgE4cjOBfX0GQgNptP+4ilO/rD+OMB3TOb0/DbnPsO51Om/V94FrGYHusWXs+dJ03MbQvd3Xlq3P+t6B3WPLCJ430Ttu30RvKjIOBKImTo0t+xvgyM0E9nxlIvLrumN4m+oZX7ecOPpHwp8AM6aw9rz3R+1jm0vvjaxZe2JJC0ulArwym0TzefsnDzsFo6Y1l+8AvjP8EMd2+PHUqegH2I7hlP8AylEDJ8fy3/u26uS1dQT6DP8BrI0YBf3VYDvRXL7tA1HpYoCCAYIdKNyPIkdYMEC47SYuIoIBIs/+rFziNibLEYbr+x030oIBotLEj3KCAYIdKNyPYrVF+GgF9H7cB2Z97EB4RQxQMECwA4X7UeQICwYIt93ERUQwQLjtKG5jhM8AzlSfGOAMA0TVOZBe0LoyVet6vFBi0XtUGyPzxX8FaF3P4tiZH3qM9RtPuf4lUSKt3XgaH3//RXZv7+3iv4RWCq/srQmLqefOLaVe7J1LVKNqzt03miLxCSmMhuIDfAwSDVLYCFansKt04Hjw4CFV3vgXS4mpZxkIIXwAAAAASUVORK5CYII=">
+
+
+                    <h4 class="my-3">curriculum vitae</h4>
+                    <p class="text-muted"><a
+                            href="https://drive.google.com/file/d/1ON_8PfYFVwAprOOKr2WVpOAF8C3swhZy/view?usp=drivesdk">click
+                            here to view my cv</a></p>
+                </div>
+                <div class="col-md-4">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAIXElEQVR4nO2aDUyT+R3H/7xY3kpfoKX0lXfkotMrvsxIPHMX3bhZdkKuBByClrMH2gaUeaVOLEIpRAUFUcGbnNxEZzHx2IHD423nDpN5uekyPCW7JbtLJME5naDzujL/y++hdW3h4WkLIs36Tb6xz/N7+/z7PP0/tgEhr7zyyiuvvPLKKxdkvo7SJgZ9BsyDPk8mrvvghWwLY795EMnQXOjZNR/D99d8sCf62ec++lkt/vHv/NLGB3zx2ICvaazf94OnnyEBWuACxrF+Xw0wA/vjAT/374SHvb4Dj3r98D97fTXIw/Swx7cU2B/2+Pa53eR+t//4/av++P5vER95mIAZ2Eev+o+53WSkaxEGIw/VrPm//Q0Ng5GHatb8f71Mw2DkoXKa/84lWtpdI23gbnvAk7vtAXiB+8ldI63/63Ya5e5urZkx6c8XAgxDvw7EnumAGZ/z1jzShFttQWk324LwzXNBE39sC9w3ZGSEoQUuYLzZFvgLYAb2W+eCSe8EYm1tQeRvwI3WoIEvW4PxjbNBD/9wNvAN5CECVmC2sJM+5yEOJm10vSV4/HpLCLbYPNhC34kWuAZbghWDZ0JM/+MOJn3OW3NIm137MASDP/8wuNb2tdGI/KbLl0oTe6TSRPyS/dl0s4HJkdP6mmp9pG9AXxMdg4nXJ0MVfafoJjjubaJ39zSzmY75b66L+9Nb6+LwS/Ytx7kDjVx6b1NIh4XN3H9q8k615ada37S62hiKwS+OG+gp3cdDR+FcdyN9uOd4aKJtfvqPJfyMt6NuZLwdjV+KU6NvpqfGi2xn9pxkxl49HjpkYXrQfSLkTTJ+qvVNUWc9A4PtztUxYzvrGUNE7BjjQWc988VAUF5eVKDiXfH5fLkYz6nfFV9SyvjBtrO6Gugpnx5jjALLp8cYw10OF2Q6flfi6JM6JgY7njc2cumX6xgdELtcxzRfrmU4bo4+Jdv55SXbBXguvGeboF6nQ752bEeZik/qmCaCsZbZbayZ+pEk43c2jtoPsTCYbNMxHmLVWHPaD7GaB3TI3zZHr+Jt06siTHo1D7tlqFXxtrk61xl+Z+LoQjULg0kTEELnq5mK89UsE5FrYE25Eg1abkpjafj9Ri0Hu+RSzj9OaMPtPl5GHZd+oZrZAbPOV7PMbQbWjI9lKn7K9X2sZ2MwotBHVeyUVj17lMivZA23Gjh2n8ULlYy4XxlYd84Z2NgpV7H/0lYVnmTbo62aGfuxnjU0OYP94GyV/d7jDj/l+lrKwzAYOaHTlcyYM7qwIcg/owt78MuD9lev8yST3dUQ2t/VwMAzubOe8cWVejrXtvajg+yUM+XsUaJ3OXu4VWf/BrvLT7m+5rJwDEZOqlHHpTeVhXUQdfvDzc1l4Xa3KHxWB1tCTg22hODp/EVLSMuQEdHsGPaHKZr2h5ugZ9P+8O5mzdTNzl1+yvWd2MfBYOSCjHLk16jl1FhrG7WcZp3DJnXbSCu6bQz8z9fGQAy+fTHw+e2LAeWu9qESFT/l+o5pOBiM3NBRDUdxVMOZgPqjH4R31evCGLbxe1do6SNX/L+9d8X/b/e6aJttY5ALNUSthjMBvdxhoOKnXN+REi4GuzoYrtThEk6DtR58uIQ7fGQP9Wf3cAkv5nAJZ8i29sge7ulmJVrkKgcVP+X6qosjMNiVobW7RWGGIm4fUVvEfVZdHFFkKOIOwbGhiPv3qmLOOrJaiEGOJRdqiiw94LgPervCQsVPub5KNQ+DnR2o28mNr1BH3IGaChVvRK/irbacp1eqeR1EPxXPfFAVOeX5XaHmKSpVESbLzO4a5eRmV6HmSCvUEd9Zen5TURT5mrM8VPyU6ztQGInBTi2+kP+jsgLeI8gvK+B9pVML7b60yOXI70ABr9ba80Bh5EVdAU8GPlAYaXxxvoBXC7l2vdVCEfS09H4Es5xhouKnXN8+JR+DqQZplXy1dgffDLlaJf+STmn/pcWu5w6BYt+OyH9Ze1utVUY+hRhZHfSE3kTuDr4ZZlJxUfFTrm9vPh+DyeJKJVq0V8FvsuQ9/3k+vxK+CFGBlbzHi9mr4Ov35vM7CSv4ek0eL5qqDnrDDJhFzFTwm4DBXX6qONqdJ8DgaWP5orDiXH4vkZPL/744L3IrmicV5woyd+cKnsLs4jzB79XbI7mu8jsTR6ocIQY7nt+ZI4rflSO8A7FdOYIRVbaI2OzmU+qtAqkqR/gdwfAzwTeFW6dujmT8zsZRQbYIg23PvZ8l3vh+lvCRJXZLKedL0CvSriyxoCBb+CXBkiUaK9gikFHxuxJH+ZliDLYevyeXKBVy0b+J83LxpZwcXgh6xSJ+gcoUt1lYJxRyiYaM31FUcZSXIcHg9euRf26GuMFy/DwvQ1Lj+AvNK5ZPbrpEY2HDuRni00rlikVW/ukKcuUiIRFPFz8m7brlHQmetLgP/s1+R/wsa7MoGy1QARsw2jKDp8vdkibWWvNIG2bKorCNR+SbYuZ9s3NVwAistuz2cZEwc1OUNnOTxAQx+U8km0ibpadGY/Dm1OivHH+OXsgC1knmSX5yR8H/W8iVtjEGg2UOP0d7goDZym9r2cbocdmG6L6fboglv/JWpb4Vi8HIQzVr/g1vxGEw8lDNmn99ShwGz6Z2rjzf/ITW/jBuPGVNPF67drHLfwAJdXNpV+evWZMgnKyNI3/OU2nVyoT+1asS8KpV8aXIw7R6ZYKWYF8Z7/4fQiYnx8uSpYk4WZpgWvF6YqlU6vqdMN9avjxBmPx6ghaYgX3F8gTq3X4mLV2WqP/BssXYE710WeLMz3lnlbQkSZa0JKkvacni8deWJOGFbGAkWJcmze7Ke+WVV1555ZVX6P9N/wWkY1YNuvgLlAAAAABJRU5ErkJggg==">
+                    <h4 class="my-3">Motivation Letter</h4>
+                    <p class="text-muted"><a
+                            href="https://drive.google.com/file/d/1LWG8ASc5WF8Lz42OhRfHW7u4TuWqiCV6/view?usp=drivesdk">click
+                            here to view motivation letter</a></p>
+                </div>
+                <!-- <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Web Security</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">My Project</h2>
+                <h3 class="section-subheading text-muted">Don't forget to check the details of each project.</h3>
+            </div>
+            <div class="row" id="proj1">
+                <div class="text-center">
+                    <h3 class="section-heading2 text-uppercase">Html, Css</h3>
+                </div>
+                <!-- Portfolio item 1-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/temp1.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Template1</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 2-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/temp2.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Template2</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 3-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/temp3.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Template3</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="proj2">
+                <div class="text-center">
+                    <h3 class="section-heading2 text-uppercase">React Js</h3>
+                </div>
+                <!-- Portfolio item 4-->
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/movi1.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Movie playlist</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React js</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 5-->
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/qumra.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Qumra</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React
+                                js,Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 6-->
+                <div class="col-lg-4 col-sm-6">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/dash.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Dashboard</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React js</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************************************************************************************ -->
+                <!-- Portfolio item 7-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/note.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Note Book</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React js</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 8-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/shopp.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Shooping Cart</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React
+                                Js,Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 9-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/pizza.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Pizza</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React js,
+                                Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 10-->
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/tour.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tourist Site</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React js</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 11-->
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal11">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/movi2.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Movie App</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React js</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="proj3">
+                <div class="text-center">
+                    <h3 class="section-heading2 text-uppercase">React & Firebase</h3>
+                </div>
+                <!-- Portfolio item 12-->
+                <div class="col-lg-4 col-sm-6">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal12">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/auth.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Authentication</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React js,Firebase
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio item 13-->
+                <div class="col-lg-4 col-sm-6">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal13">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/amazon.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Amazon</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React
+                                js,Firebase,Stripe</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************************************************************************************ -->
+            </div>
+            <div class="row" id="proj4">
+                <div class="text-center">
+                    <h3 class="section-heading2 text-uppercase">React & Laravel</h3>
+                </div>
+                <!-- Portfolio item 14-->
+                <div class="col-lg-4 col-sm-6">
+
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal14">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><img width="100" height="100"
+                                        src="https://img.icons8.com/bubbles/100/view-file--v1.png"
+                                        alt="view-file--v1" /></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/reactApp.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">React App</div>
+                            <div class="portfolio-caption-subheading text-muted">Designed by html,css, React
+                                js,Bootstrap,Laravel</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************************************************************************************ -->
+            </div>
+        </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading text-muted">A brief overview of my journey so far</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+
+                            <h4 class="subheading">At the beginning</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Hello! I’m Rama Khatib, a fifth-year student passionate about web
+                                development. My journey in technology has been fueled by a desire to create impactful
+                                digital experiences.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Education</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Currently pursuing my degree in Software engineering at College of
+                                Informatics Engineering I have engaged in various projects that have honed my skills in
+                                web development</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Front-End Development</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">As a front-end developer, I specialize in creating user-friendly
+                                interfaces using HTML, CSS, JavaScript, React js, Bootstrap, and Firebase. I have worked
+                                on several projects, including a business website that mimics an Amazon store</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Backend Development Journey</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">I recently set out to learn backend development. I'm exploring
+                                technologies like Laravel and databases, driven by the desire to create full-fledged web
+                                applications. I am currently working on a complete online store using the dsahboard
+                                website so that the administrator can enter
+                                Its products and a home page to display those products.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Personal Development & Future Goals</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">I believe in lifelong learning and am always seeking opportunities to
+                                enhance my skills. My goal is to become a full-stack developer and contribute to
+                                innovative projects that make a difference</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Team-->
+    <!-- <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Parveen Anand</h4>
+                            <p class="text-muted">Lead Designer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Diana Petersen</h4>
+                            <p class="text-muted">Lead Marketer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Larry Parker</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                </div>
+            </div>
+        </section> -->
+    <!-- Clients-->
+    <!-- <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Me</h2>
+                <h3 class="section-subheading text-muted">You can contact me in one of the following ways</h3>
+            </div>
+
+            <form id="contactForm" class="" action="mailto:ramakhateen901@gmail.com" method="post" enctype="text/plain"
+                data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch" style="margin-bottom: 0px !important">
+                    <!-- <div class=" col-md-6"> -->
+                    <div class="form-group" style="text-align: center;">
+                        <h5 style="color: white;"> <i class="fa-solid fa-envelope"></i> My Emails: </h5>
+                        <p style="color: #ffc800;">
+                            ramakhateen901@gmail.com
+                        </p>
+                        <p style="color: #ffc800;">
+                            ramakhatib901@gmail.com
+                        </p>
+                        <p style="color: #ffc800;">
+                            ramayousefkhatib901@gmail.com
+                        </p>
+                    </div>
+                    <div class="form-group" style="text-align: center;">
+                        <h5 style="color: white;"><i class="fa-solid fa-phone"></i> My Phone Numbers: </h5>
+                        <p style="color: #ffc800;">
+                            0962847763
+                        </p>
+                        <p style="color: #ffc800;">
+                            0991237465
+                        </p>
+
+                    </div>
+                    <!-- </div> -->
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 0px !important">
+                <!-- <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div> -->
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2"
+                        href="https://www.instagram.com/rama.khateeb.129?igsh=MTdidGp2Mzk0b3JtNg==#!"
+                        aria-label="Twitter"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2"
+                        href="https://www.facebook.com/rama.khateeb.129?mibextid=ZbWKwL" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/rama-khatib-136586305"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <!-- <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Template One</h2>
+                                <p class="item-intro text-muted">Html, Css</p>
+                                }
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/temp1.jpg"
+                                    alt="..." />
+                                <p>Hello my friends, I am happy to share you my project - written by HTML and CSS,
+                                    -which response to all screen sizes</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://rama77o.github.io/template-one/">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Template Two</h2>
+                                <p class="item-intro text-muted">Html, Css</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/temp2.jpg"
+                                    alt="..." />
+                                <p>Hello my friends, I am happy to share you my project -written by HTML and css -which
+                                    response to all screen sizes.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://rama77o.github.io/template-two/">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Template Three</h2>
+                                <p class="item-intro text-muted">Html, Css</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/temp3.jpg"
+                                    alt="..." />
+                                <p>Hello friends,
+
+                                    I am happy to share with you my project
+
+                                    -written in HTML and CSS
+
+                                    -with different animations
+
+                                    -which is responsive to all screen
+
+                                    sizes.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://rama77o.github.io/template-three/">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Movie Playlist</h2>
+                                <p class="item-intro text-muted">Html, Css,React js</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/movi1.jpg"
+                                    alt="..." />
+                                <p>My friends I present to you my second movie project.
+                                    Its characteristics
+                                    - Designed using html, css and react js
+                                    -It works on the principle of components
+                                    -It contains a search bar for movies In addition to customizing the interface for
+                                    each specific type of movie</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/movie_App_TMDB">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Qumra</h2>
+                                <p class="item-intro text-muted">Html, Css, React js, Bootsrap</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/qumra.jpg"
+                                    alt="..." />
+                                <p>I am pleased to present to you my -Built using html css react js react-
+                                    project Qumra marketing
+                                    boostrap
+                                    -Responsive to all screen sizes</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/Qumra">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Dashboard</h2>
+                                <p class="item-intro text-muted">Html, Css, React js</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/dash.jpg"
+                                    alt="..." />
+                                <p>Hello my friends,
+                                    I present to you my dashboard project
+                                    -Built using html css and react js
+
+                                    -With a simple and quiet design that responds to all screen sizes</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/Dashboard">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************************************************* -->
+    <!-- Portfolio item 7 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Note Book</h2>
+                                <p class="item-intro text-muted">Html, Css, React js</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/note.jpg"
+                                    alt="..." />
+                                <p> I am happy to share with you notbook website for organizing ideas
+                                    -Built using html css React js
+                                    -Displaying completed,active activities, with ability to delete all completed or
+                                    activated items, and the ability to switch between them.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/ToDoList">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 8 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Shopping Cart</h2>
+                                <p class="item-intro text-muted">Html, Css, React js, Bootstrap</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/shopp.jpg"
+                                    alt="..." />
+                                <p>I am pleased to share with you my shopping cart project - Designed using html css,
+                                    react js and react-bootstrap
+                                    -It contains a product basket with the ability to add a product to it or undo and
+                                    remove it, and control the number of pieces for each product - Display the total
+                                    number of pieces and the final price for each product after adding the products to
+                                    the cart</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/shopping_cart">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio item 9 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Pizza</h2>
+                                <p class="item-intro text-muted">Html, Css, React js, Bootstrap</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/pizza.jpg"
+                                    alt="..." />
+                                <p>Hello friends, I am happy to share with you my pizza project.
+
+                                    Its characteristics
+
+                                    - Designed using html, css, react js
+
+                                    and react-boostrap
+
+                                    -Responsive to all screen sizes
+
+                                    - With a visual identity using one animation on all interfaces and scrolling and
+                                    selecting in specific colors</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/PizzaApp">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 10 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Tourist Site</h2>
+                                <p class="item-intro text-muted">Html, Css,React js</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/tour.jpg"
+                                    alt="..." />
+                                <p>Hello friends,
+
+                                    I am happy to share with you my "wonder" project.
+
+                                    Its characteristics - Designed using html, css and react js
+
+                                    -Responsive to all screen sizes - With a visual identity using one animation on all
+                                    interfaces and scrolling and selecting in specific colors</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/wanderApp">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 11 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Movie App</h2>
+                                <p class="item-intro text-muted">Html, Css, React js</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/movi2.jpg"
+                                    alt="..." />
+                                <p>Hello friends,
+                                    I am happy to share with you my movie project.
+                                    Its characteristics - Designed using html, css and react js
+                                    -It works on the principle of components
+                                    -It contains a movie search bar -The ability to add any movie to the watch list
+                                    later or to the watched list with the ability to diversify between them in addition
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>wibsite live on:</strong>
+                                        <a href="https://Rama77o.github.io/movie_app_OMDB_api">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 12 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Dashboard</h2>
+                                <p class="item-intro text-muted">Html, Css, React js, Firebase</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/auth.jpg"
+                                    alt="..." />
+                                <p>Hello friends,
+                                    I am happy to share my project "Auth" with you. - Build using HTML CSS React JS
+                                    React-Bootstrap and Firebase
+                                    -Its characteristics
+                                    .sign up
+                                    .login
+                                    .Reset Password
+                                    .A page for a user's profile with the email address he or she is registered or
+                                    logged in use it
+                                    .Log out</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>You Can See wibsite on:</strong>
+                                        <a
+                                            href="https://drive.google.com/file/d/1PG-wrfU4HOLK2aTC3WbK5ezYm236CkHh/view?usp=drivesdk">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio item 13 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Amazon</h2>
+                                <p class="item-intro text-muted">Html, Css, React js, Firebase,Stripe</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/amazon.jpg"
+                                    alt="..." />
+                                <p>I am pleased to share with you my project "Amazon" example of online shopping -Built
+                                    using html, css, react js and firebase
+                                    -Its characteristics
+                                    .It contains products and cart where the user can add or remove products from the
+                                    cart, while.calculating the number of pieces and the final price of the products in
+                                    cart
+                                    .sign up
+                                    .login
+                                    .logout
+                                    .Display the user's email on the page after logging in or sign up .There is a Visa
+                                    payment card after the purchase is finalized</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>You Can See wibsite on:</strong>
+                                        <a
+                                            href="https://drive.google.com/file/d/1PFcGoeq9bUjrVlRkNgrDLs7XrgGcR6-e/view?usp=drivesdk">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 14 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR4nO2ZT0gUURzHf25CQf8htsMGO+PO232z4IribuQlCQu62CGD0IK6VKSVeujaTb119GSXcLPSS5eQCsJ0XbWCCMrCurfWIgYZbOuL3+ass7Mzs/Pmjx7aHzwYHfy9z/f33vze7/cEqFrVqvZ/WjQa3eOGn1Ao0iKEou0AUANbYD4xTPsFSV4WicwEQpc2JrdlYph2i0ReR1/4DB6bTyB0pDBZ6VgXSPQGrzOR0J4iPAZDondgK+EFIv+2K6IMnsgzkUhkr/Je/ewRPB0JBhsO4MS8IirA14iEPv33ng7j3E7h0eGwBv6e4vhwLLZbJPLLUhHyTSNnAqFXtPCSJO1T3uOzNlBOROhGXusQo1ffEHlXaSXK97w8rbdV4k1S0hURmG2MIq82loaOlRe+8dMnxIzRSlSKvGIsBYn8DIxePR9YUs8dlGgv8JqSKs2igPAsDWM4ss99422tdcvalbAaeZaCBJuFUfSVm4GHl88d+aqa/xsXPE6gAvmFH6wZvJkIXni2MTKTtROE0j/K33IfnHhIGaU5PXgTEdzwWY2Po3FplaWgk09ASD6jl+7M4I0AnMDXhWWWHDj4qvCeW0RhD2+KwGyDE1QSoID0dAU+dXcGFt8/2NlqBX5FkwwQfqjX/7bE9xw0c4oozSAnj9d9//HMN2FFRHEgaAoSjuHTBV8XuAS4LcIh/CibhhC3AFdFOIFPba7i9omwCz8PcUfwRh82ZgyrH3albDPU73/jKbyRCMw2vAJ6LgYWtwVeT8T1rsBH1wXMeghfFCHRU9gKfni06xhLw33XttDsFsBrjc1DI6+IFZ2PePCW/7Un8EFJviZI9KdA5CcAsMMtEVmDKtbTjzYYDlNdATqH1LaLEDTwgkSn9FbALjzzUkQZvKasNoNXijkcPAVgm1sijMppq/BqEJ7DLqsnws7lmSjJX9yAd0OEQOhn91tKi80IDjsiMs5bSjlj1NRbhceDCQeviJymqY81hNfYPLRwCRAl2qd3rWKnnr97+9CCWoRZFZtPwZj2WmUAfdkop8sutpqayOPcNCQtlwSqMdjnX6hUxeY0kceBP+PviyVGCiRHV4uXzm465G1GzPqJvE7k1XM5aSnLVgKjgh+Z5XpetfR6/URmsnbCNPJOmnojEYTSvN16XiuCqHyZwqehAxxY2XZy0gZqt5Notm1cgFfMhxeteFeJkyXi0mpycP8UL3xRRCjajocU+qqPhdcw23gJX2L4vwE2D+124XV8NRqU4u7Dq61EhMNOipWL8Ba+OPEcNGN6483ReoY+Cr5sZpuqVQ347C9YIo8e4oNshwAAAABJRU5ErkJggg==">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">React App</h2>
+                                <p class="item-intro text-muted">Html, Css, React js,Bootsrap, Laravel</p>
+                                <img class="img-fluid d-block mx-auto imgInner" src="assets/img/portfolio/reactApp.jpg"
+                                    alt="..." />
+                                <p>Hello friends,
+
+                                    I am happy to share my project "REact APP" with you. - Build using HTML CSS React JS
+                                    , Api Made Using Laravel
+
+                                    -Its characteristics
+
+                                    .Register
+
+                                    .login
+
+                                    .Logout
+
+                                    .List of Users make Register as well as /Delete User/Alter User
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>You Can See wibsite on:</strong>
+                                        <a
+                                            href="https://drive.google.com/file/d/1PW3A6C4o0Adefz00uen8vGIiOeb0RAVl/view?usp=drivesdk">live</a>
+                                    </li>
+                                    <!-- <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li> -->
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--***************************************************************  -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
